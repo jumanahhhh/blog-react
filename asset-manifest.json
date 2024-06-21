@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/blog-react/static/css/main.4aa13464.css",
-    "main.js": "/blog-react/static/js/main.6cc90901.js",
+    "main.css": "/blog-react/static/css/main.62038064.css",
+    "main.js": "/blog-react/static/js/main.376a3941.js",
     "static/js/453.ede2c593.chunk.js": "/blog-react/static/js/453.ede2c593.chunk.js",
+    "static/media/Card_1.jpg": "/blog-react/static/media/Card_1.a9a90833f3f86072eada.jpg",
+    "static/media/logo.png": "/blog-react/static/media/logo.889146a3c063016ead08.png",
     "index.html": "/blog-react/index.html",
-    "main.4aa13464.css.map": "/blog-react/static/css/main.4aa13464.css.map",
-    "main.6cc90901.js.map": "/blog-react/static/js/main.6cc90901.js.map",
+    "main.62038064.css.map": "/blog-react/static/css/main.62038064.css.map",
+    "main.376a3941.js.map": "/blog-react/static/js/main.376a3941.js.map",
     "453.ede2c593.chunk.js.map": "/blog-react/static/js/453.ede2c593.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4aa13464.css",
-    "static/js/main.6cc90901.js"
+    "static/css/main.62038064.css",
+    "static/js/main.376a3941.js"
   ]
 }
