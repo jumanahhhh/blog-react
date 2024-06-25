@@ -24,3 +24,35 @@
 }
 
 
+
+
+
+@media (max-width: 768px) {
+  .motiv {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .motiv p {
+    margin: 20px;
+  }
+
+  .motiv hr {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .motiv {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .motiv p {
+    margin: 10px;
+  }
+
+  .motiv hr {
+    width: 90%;
+  }
+}

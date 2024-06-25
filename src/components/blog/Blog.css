@@ -1,0 +1,40 @@
+.blog-container {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Georgia', serif;
+  }
+  
+  .blog-container h1 {
+    font-size: 3em;
+    color: #ff3366;
+    text-align: left;
+    padding-left: 180px;
+  }
+  
+  .blog-container p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .see-all-blogs {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .see-all-blogs:hover {
+    background-color: #ff3366;
+    color: black;
+  }
+  

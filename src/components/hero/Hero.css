@@ -12,25 +12,27 @@
     gap: 20px;
     padding-left: 180px;
     line-height: 1.1;
-    color: white;
+    /* color: white; */
+    color: black;
     text-align: left;
 }
 
 .hero-left h2{
-    color: #fcb424;
-    font-size: 70px;
+    /* color: #fcb424; */
+    color: #ff3366;
+    font-size: 80px;
     font-family: Georgia;
     font-weight: 500;
 }
 .hero-left h3{
-    color: #fcb424;
-    font-size: 60px;
+    color: #333333;
+    font-size: 45px;
     font-family: Georgia;
     font-weight: 500;
 }
 
 .hero-left p{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
 }
 
@@ -42,14 +44,19 @@
     width: 310px;
     height: 70px;
     border-radius: 20px;
-    background: #fcb424;
-    color: white;
+    /* background: #fcb424; */
+    
+    background-color: #ff3366;
+  color: black;
     margin-top: 30px;
     font-size: 22px;
     font-weight: 500;
     
 }
-
+.hero-btn:hover{
+  background: black;
+    color: white;
+}
 .hero-right{
     flex: 1;
     display: flex;
@@ -61,3 +68,85 @@
     width: 500px;
     height: auto;
 }
+
+
+@media (max-width: 1024px) {
+    .hero-left {
+      padding-left: 100px;
+    }
+  
+    .hero-left h2 {
+      font-size: 60px;
+    }
+  
+    .hero-left h3 {
+      font-size: 40px;
+    }
+  
+    .hero-left p {
+      font-size: 30px;
+    }
+  
+    .hero-right img {
+      width: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .hero-left {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .hero-left h2 {
+      font-size: 50px;
+    }
+  
+    .hero-left h3 {
+      font-size: 30px;
+    }
+  
+    .hero-left p {
+      font-size: 25px;
+    }
+  
+    .hero-btn {
+      width: 250px;
+      height: 60px;
+      font-size: 18px;
+    }
+  
+    .hero-right img {
+      width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-left h2 {
+      font-size: 40px;
+    }
+  
+    .hero-left h3 {
+      font-size: 25px;
+    }
+  
+    .hero-left p {
+      font-size: 20px;
+    }
+  
+    .hero-btn {
+      width: 200px;
+      height: 50px;
+      font-size: 16px;
+    }
+  
+    .hero-right img {
+      width: 250px;
+    }
+  }
