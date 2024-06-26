@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/blog-react/static/css/main.e4126ee2.css",
-    "main.js": "/blog-react/static/js/main.60252c56.js",
+    "main.css": "/blog-react/static/css/main.21065ce7.css",
+    "main.js": "/blog-react/static/js/main.c9fe695e.js",
     "static/js/453.ede2c593.chunk.js": "/blog-react/static/js/453.ede2c593.chunk.js",
     "static/media/Card_1.jpg": "/blog-react/static/media/Card_1.a9a90833f3f86072eada.jpg",
     "static/media/logo.png": "/blog-react/static/media/logo.889146a3c063016ead08.png",
+    "static/media/image2.png": "/blog-react/static/media/image2.a8bda2357676b47c034a.png",
+    "static/media/image1.png": "/blog-react/static/media/image1.15479af6f3253df7d61c.png",
+    "static/media/hero1.png": "/blog-react/static/media/hero1.d6d8b03a43bc62c2cdaa.png",
+    "static/media/sliderbackground.jpeg": "/blog-react/static/media/sliderbackground.f38fdb0918582e061318.jpeg",
+    "static/media/imagesliderbackground2.jpeg": "/blog-react/static/media/imagesliderbackground2.47d30ffe9e193022bc14.jpeg",
     "index.html": "/blog-react/index.html",
-    "main.e4126ee2.css.map": "/blog-react/static/css/main.e4126ee2.css.map",
-    "main.60252c56.js.map": "/blog-react/static/js/main.60252c56.js.map",
+    "main.21065ce7.css.map": "/blog-react/static/css/main.21065ce7.css.map",
+    "main.c9fe695e.js.map": "/blog-react/static/js/main.c9fe695e.js.map",
     "453.ede2c593.chunk.js.map": "/blog-react/static/js/453.ede2c593.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4126ee2.css",
-    "static/js/main.60252c56.js"
+    "static/css/main.21065ce7.css",
+    "static/js/main.c9fe695e.js"
   ]
 }
