@@ -27,7 +27,7 @@
   font-weight: 700;
 }
 
-.services-header p {
+.services-header p{
   font-size: 1rem;
   color: #333;
 }
@@ -65,33 +65,42 @@
   width: 100%;
   height: 100%;
   z-index: 1;
-}
-
-.card-content {
-  /* position: relative; */
   
+}
+.card-content{
+  position: relative;
   z-index: 2;
 }
 
 .service-card h2 {
-  
+  margin-top: 20px;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .service-card p {
+  margin-top: 70px;
   font-size: 1rem;
   margin-bottom: 20px;
   color: white;
   
 }
 
-.learn-more {
+ .card-content button {
+  margin-top: 30px;
   display: inline-block;
   background-color: transparent;
   color: #ff3366;
   text-decoration: none;
   font-weight: bold;
+  z-index: 2;
+  transition: all 0.3s ease ;
+}
+
+.card-content button:hover{
+  background-color: transparent;
+  transform: translateY(-5px);
+  color: #ea1b4e;
 }
 
 @media only screen and (max-width: 768px) {

@@ -18,9 +18,9 @@ const Services = () => {
               clarity in your thoughts, courage in your decisions and bring consistency
               in your life.
             </p>
-            <a href="#" className="learn-more">
-              Learn more →
-            </a>
+            <button><a href="#" className="learn-more">
+              LEARN MORE →
+            </a></button>
           </div>
         </div>
         <div className="service-card">
@@ -31,9 +31,9 @@ const Services = () => {
               clarity in your thoughts, courage in your decisions and bring consistency
               in your life.
             </p>
-            <a href="#" className="learn-more">
-              Learn more →
-            </a>
+            <button><a href="#" className="learn-more">
+              LEARN MORE →
+            </a></button>
           </div>
         </div>
       </div>
