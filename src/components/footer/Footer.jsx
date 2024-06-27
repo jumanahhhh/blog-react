@@ -26,7 +26,7 @@ const Footer = () => {
             <li><FontAwesomeIcon icon={faMapMarkerAlt} /> 7 Kings Rd, Portsmouth, Southsea, PO5 4DJ, UK</li>
           </div>
         </div>
-        <div className="about">
+        <div className="aboutt">
           <h3>More about Us</h3>
           <div className="about-info">
             <ul>

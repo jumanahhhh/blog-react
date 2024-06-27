@@ -1,0 +1,90 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+.card-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card1, .card3 {
+  padding-top: 0%;
+  background-color: #f71c52; /* Main card color */
+  color: white;
+
+  padding: 20px;
+  padding-bottom: 10px;
+  height: 302px;
+  width: 345px;
+
+  margin-top: 10px;
+}
+.card2 {
+  background-color: #b40d4a; /* Main card color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  padding-bottom: 30px;
+  height: 302px;
+  width: 345px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card2 p {
+  padding-bottom: 33px;
+  color: white;
+}
+
+h3 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 30px;
+  font-size: 29px;
+  text-wrap: nowrap;
+}
+.card-container p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  padding-top: 22px;
+  line-height: 21px;
+  padding-bottom: 46px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 10px;
+  font-size: 13px;
+  transition: all 0.9s ease;
+  cursor: pointer;
+  padding: 12px 25px 12px 25px;
+}
+
+button a {
+  text-decoration: none;
+  color: inherit; /* This ensures the link text inherits the button text color */
+}
+
+button:hover {
+  background-color: #f2f2f2;
+  transform: translateY(-5px);
+}

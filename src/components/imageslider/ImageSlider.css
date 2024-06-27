@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  background-color: #f4f4f4;
+  /* overflow: hidden; */
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-1 .slide-content {
+  margin-left: 0%;
+  position: absolute;
+  top: 50%;
+  bottom: 10%;
+  left: 21%;
+  right: 49%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: left;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slide-2 .slide-content {
+  position: absolute;
+  bottom: 10%;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: left;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slide-content h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 70px;
+  color: #000;
+  margin: 0;
+  white-space: nowrap;
+}
+.slide-content h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  color: #f71c52;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.slide-content p {
+  color: #000;
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 50;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.slide-content a {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 750;
+  font-style: normal;
+  line-height: 30px;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #ff0054;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.slide-content .ppbtn {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 750;
+  font-style: normal;
+  line-height: 30px;
+  display: inline-block;
+  margin: 5px;
+  padding: 9px 20px;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #000;
+  text-decoration: none;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.slide-content a:nth-child(2) {
+  background-color: #000;
+}
+
+.slide-content a:hover {
+  color: white;
+  background-color: #ea1b4e;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.slide-content .ppbtn:hover {
+  background-color: #000;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: black;
+  font-weight: lighter;
+  border: none;
+  font-size: 4em;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  z-index: 2;
+}
+.arrow:hover {
+  font-weight: bolder;
+  font-size: 6rem;
+  padding: 5px;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}

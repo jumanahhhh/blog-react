@@ -34,8 +34,11 @@ import Hero from './components/hero/Hero';
 import About from './components/about/About';
 import Services from './components/services/Services';
 import Blog from './components/blog/Blog';
-import Footer
- from './components/footer/Footer';
+import Footer from './components/footer/Footer';
+import GridLayout from './components/gridlayout/GridLayout';
+import ImageSlider from './components/imageslider/ImageSlider';
+import Cards from './components/cards/Cards';
+
 function App() {
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
@@ -48,21 +51,25 @@ function App() {
   return (
     <div className="App">
       <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} servicesRef={servicesRef} blogRef={blogRef}/>
+      <ImageSlider/>
+      <Cards/>
       <Hero />
-      <div className='motiv'>
+      {/* <div className='motiv'>
         <hr />
         <p>"The best project you’ll ever work on is ‘you’ and the best investment you can make is investing in yourself"</p>
         <hr />
-      </div>
+      </div> */}
+      
       <div ref={aboutRef}>
         <About />
       </div>
       <div ref={servicesRef}>
         <Services />
       </div>
-      <div ref={blogRef}> 
+      {/* <div ref={blogRef}> 
         <Blog/>
-      </div>
+      </div> */}
+      <GridLayout/>
       <Footer/>
     </div>
   );

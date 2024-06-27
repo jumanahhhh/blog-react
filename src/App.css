@@ -3,23 +3,26 @@
 }
 
 .motiv {
-  color: white;
+  color: black;
   font-family: 'Georgia', serif;
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+
 
 }
 
 .motiv p {
   margin: 40px;
   line-height: 1.6;
+  
 }
 
 .motiv hr {
   width: 70%;
   border: none;
-  border-top: 1px solid white;
+  border-top: 1px solid black;
   margin: 0 auto; 
 }
 
