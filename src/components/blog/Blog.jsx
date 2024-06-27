@@ -1,42 +1,62 @@
-import React from 'react';
-import BlogCard from './BlogCard';
-import './Blog.css';
-
-const blogs = [
-  {
-    title: 'Self Motivation Helps',
-    date: '14th June',
-    readTime: '2 mins read',
-    imgSrc: '/path/to/image1.png', // Replace with actual image path
-    link: '#'
-  },
-  {
-    title: '3 types of dream steelers to watch out for',
-    date: '31st May',
-    readTime: '3 mins read',
-    imgSrc: '/path/to/image2.png', // Replace with actual image path
-    link: '#'
-  },
-  {
-    title: 'The Million Dollar Question',
-    date: '17th May',
-    readTime: '3 mins read',
-    imgSrc: '/path/to/image3.png', // Replace with actual image path
-    link: '#'
-  }
-];
+import React, { useRef, useEffect } from 'react';
+import img1 from "../assets/image1.png";
+import "./Blog.css";
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 const Blog = () => {
+
+  const elementsRef = useRef([]);
+
+  const handleIntersect = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        console.log('Element is intersecting', entry.target);
+      } else {
+        entry.target.classList.remove('animate');
+      }
+    });
+  };
+
+  const observe = useIntersectionObserver(handleIntersect, {
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    elementsRef.current.forEach((element) => {
+      if (element) {
+        observe(element);
+      }
+    });
+  }, [observe]);
+
   return (
-    <div className="blog-container">
-      <h1>Blog</h1>
-      <p>Here's a few articles that I wrote recently that can help you build a better image by yourself</p>
-      <div className="blog-cards">
-        {blogs.map((blog, index) => (
-          <BlogCard key={index} blog={blog} />
+    <div className="blog">
+      <div className="heading">
+        <h2>BLOGS</h2>
+      </div>
+
+      <div className="cards">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <div
+            className="card1"
+            ref={(el) => (elementsRef.current[index] = el)}
+            key={index}
+          >
+            <img src={img1} alt="first" />
+            <h3>Sub Heading</h3>
+            <p>
+              Details ahfafhdjfhsgsjgd sdghs; dgsghs gsghs;ghsdg shsogsigs sghsghs
+              <br /> dhsaohoawfaufgawyougfaugfauwy
+            </p>
+            <hr />
+            <div className="details">
+              <img src={img1} alt="author" />
+              <p>Name</p>
+            </div>
+          </div>
         ))}
       </div>
-      <button className="see-all-blogs">see all blogs →</button>
     </div>
   );
 };

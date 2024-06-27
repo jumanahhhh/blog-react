@@ -33,11 +33,11 @@ import Navbar from './components/navbar/Navbar';
 import Hero from './components/hero/Hero';
 import About from './components/about/About';
 import Services from './components/services/Services';
-import Blog from './components/blog/Blog';
 import Footer from './components/footer/Footer';
 import GridLayout from './components/gridlayout/GridLayout';
 import ImageSlider from './components/imageslider/ImageSlider';
 import Cards from './components/cards/Cards';
+import Blog from './components/blog/Blog';
 
 function App() {
   const aboutRef = useRef(null);
@@ -66,11 +66,14 @@ function App() {
       <div ref={servicesRef}>
         <Services />
       </div>
-      {/* <div ref={blogRef}> 
-        <Blog/>
-      </div> */}
       <GridLayout/>
+      
+      <div ref={blogRef}>
+        <Blog/>
+      </div>
+      
       <Footer/>
+
     </div>
   );
 }
