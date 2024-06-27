@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blog-react/static/css/main.21065ce7.css",
-    "main.js": "/blog-react/static/js/main.c9fe695e.js",
+    "main.css": "/blog-react/static/css/main.a35de710.css",
+    "main.js": "/blog-react/static/js/main.c8eb418f.js",
     "static/js/453.ede2c593.chunk.js": "/blog-react/static/js/453.ede2c593.chunk.js",
     "static/media/Card_1.jpg": "/blog-react/static/media/Card_1.a9a90833f3f86072eada.jpg",
     "static/media/logo.png": "/blog-react/static/media/logo.889146a3c063016ead08.png",
@@ -11,12 +11,12 @@
     "static/media/sliderbackground.jpeg": "/blog-react/static/media/sliderbackground.f38fdb0918582e061318.jpeg",
     "static/media/imagesliderbackground2.jpeg": "/blog-react/static/media/imagesliderbackground2.47d30ffe9e193022bc14.jpeg",
     "index.html": "/blog-react/index.html",
-    "main.21065ce7.css.map": "/blog-react/static/css/main.21065ce7.css.map",
-    "main.c9fe695e.js.map": "/blog-react/static/js/main.c9fe695e.js.map",
+    "main.a35de710.css.map": "/blog-react/static/css/main.a35de710.css.map",
+    "main.c8eb418f.js.map": "/blog-react/static/js/main.c8eb418f.js.map",
     "453.ede2c593.chunk.js.map": "/blog-react/static/js/453.ede2c593.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21065ce7.css",
-    "static/js/main.c9fe695e.js"
+    "static/css/main.a35de710.css",
+    "static/js/main.c8eb418f.js"
   ]
 }
