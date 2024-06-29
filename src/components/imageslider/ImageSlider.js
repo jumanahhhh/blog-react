@@ -67,7 +67,8 @@ const ImageSlider = () => {
             <img src={img1} alt="Slide 1" />
             <div className="slide-2">
               <div className="slide-content">
-                <h2>Celeste's Coaching</h2>
+                {/* <h2>Celeste's Coaching</h2> */}
+                <h2>Tanuja's Coaching</h2>
                 <h1>transform lives</h1>
                 <p>
                   We all know how life can be challenging and hard. And that there’s

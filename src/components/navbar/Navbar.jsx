@@ -75,7 +75,7 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import logoo from '../assets/logo.png';
 
-const Navbar = ({ scrollToSection, aboutRef, servicesRef, blogRef }) => {
+const Navbar = ({ scrollToSection, aboutRef, servicesRef, blogRef , resourceRef }) => {
   const [menu, setMenu] = useState("");
 
   return (
@@ -98,7 +98,7 @@ const Navbar = ({ scrollToSection, aboutRef, servicesRef, blogRef }) => {
         <li onClick={() => { setMenu("instagram"); }} className={`nav-item ${menu === "instagram" ? 'active' : ''}`}>
           Instagram
         </li>
-        <li onClick={() => { setMenu("resources"); }} className={`nav-item ${menu === "resources" ? 'active' : ''}`}>
+        <li onClick={() => { setMenu("resources"); scrollToSection(resourceRef); }}   className={`nav-item ${menu === "resources" ? 'active' : ''}`}>
           Resources
         </li>
       </ul>

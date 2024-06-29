@@ -1,3 +1,17 @@
+/* Transition */
+
+.card1, .card2, .card3 {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.card1.animate, .card2.animate, .card3.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .card-container {
   font-family: Arial, sans-serif;
   /* background-color: #f4f4f4; */
@@ -7,6 +21,7 @@
   align-items: center;
 
 }
+
 
 .card1, .card3 {
   padding-top: 0%;

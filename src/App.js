@@ -43,6 +43,7 @@ function App() {
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const blogRef = useRef(null);
+  const resourceRef = useRef(null);
 
   const scrollToSection = (sectionRef) => {
     sectionRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -50,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} servicesRef={servicesRef} blogRef={blogRef}/>
+      <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} servicesRef={servicesRef} blogRef={blogRef} resourceRef={resourceRef}/>
       <ImageSlider/>
       <Cards/>
       <Hero />
@@ -72,7 +73,9 @@ function App() {
         <Blog/>
       </div>
       
-      <Footer/>
+      <div ref={resourceRef}> 
+        <Footer/>
+      </div>
 
     </div>
   );

@@ -8,6 +8,10 @@ const Hero = () => {
       <div className="hero-left">
         <h2>Tanuja Devang</h2>
         <h3>Life Coach & Image Consultant</h3>
+
+        
+
+
         <br/>
         <p>
           I am on a mission to redesign peoples lives with love in my heart,

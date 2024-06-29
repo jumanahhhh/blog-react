@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './Services.css';
-import Card_1 from '../assets/Card_1.jpg';
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 
 const Services = () => {
+  const elementsRef = useRef([]);
+
+  const handleIntersect = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        console.log('Element is intersecting', entry.target);
+      } else {
+        entry.target.classList.remove('animate');
+      }
+    });
+  };
+
+  const observe = useIntersectionObserver(handleIntersect, {
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    elementsRef.current.forEach((element) => {
+      if (element) {
+        observe(element);
+      }
+    });
+  }, [observe]);
+
   return (
     <div className="services">
       <div className="services-header">
@@ -10,7 +35,7 @@ const Services = () => {
         <p>All my services are categorized into these 2 subsets - select from the below to explore further</p>
       </div>
       <div className="services-content">
-        <div className="service-card">
+        <div className="service-card" ref={(el) => elementsRef.current[0] = el}>
           <div className="card-content">
             <h2>One on One Life Coaching</h2>
             <p>
@@ -23,7 +48,7 @@ const Services = () => {
             </a></button>
           </div>
         </div>
-        <div className="service-card">
+        <div className="service-card" ref={(el) => elementsRef.current[1] = el}>
           <div className="card-content">
             <h2>One on One Life Coaching</h2>
             <p>
@@ -36,6 +61,7 @@ const Services = () => {
             </a></button>
           </div>
         </div>
+        
       </div>
     </div>
   );
