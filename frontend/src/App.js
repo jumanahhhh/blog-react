@@ -13,6 +13,8 @@ import Blog from './components/blog/Blog';
 import ScrollToTopButton from './components/scroll/ScrollToTopButton';
 import PopupForm from './components/popup/PopupForm';
 import Admin from './components/Admin';
+import Cert from './components/cert/Cert';
+import Testimonials from './components/testimo/Testimonials';
 
 function App() {
   const aboutRef = useRef(null);
@@ -50,10 +52,13 @@ function App() {
             </div>
             <div ref={servicesRef}>
               <Services />
+            <Cert/>
+
             </div>
             <GridLayout />
             <div ref={blogRef}>
               <Blog />
+              <Testimonials/>
             </div>
             <div ref={resourceRef}>
               <Footer />
