@@ -57,10 +57,12 @@
 
 
 
-
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -68,9 +70,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/blogdatabase';
-
-mongoose.connect(MONGODB_URI, {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -92,13 +92,10 @@ const User = mongoose.model('User', userSchema);
 
 app.post('/api/users', async (req, res) => {
   try {
-    console.log('Received request:', req.body);
     const user = new User(req.body);
     await user.save();
-    console.log('Saved user:', user);
     res.status(201).send(user);
   } catch (error) {
-    console.error('Error saving user:', error);
     res.status(400).send(error);
   }
 });
@@ -106,10 +103,8 @@ app.post('/api/users', async (req, res) => {
 app.get('/api/users', async (req, res) => {
   try {
     const users = await User.find();
-    console.log('Fetched users:', users);
     res.status(200).send(users);
   } catch (error) {
-    console.error('Error fetching users:', error);
     res.status(500).send(error);
   }
 });
