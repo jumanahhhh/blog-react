@@ -6,7 +6,11 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+app.use(cors({
+  origin: [""],
+  methods: ["POST", "GET"],
+  credentials: true
+}));
 app.use(express.json());
 
 // mongoose.connect('mongodb://localhost:27017/blogdatabase', {
