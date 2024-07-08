@@ -1,15 +1,20 @@
 .navbar {
+
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   box-shadow: 0 1px 3px -2px black;
-  color: white;
-  background-color: #ff3366;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
 
+
 .nav-logo {
+  position: relative;
+  left: 150px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -28,11 +33,18 @@
 
 .nav-menu {
   display: flex;
+  justify-content: center;
   align-items: center;
   list-style: none;
   gap: 50px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.nav-menu-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }
 
 .nav-menu li {
@@ -47,7 +59,7 @@
 }
 
 .nav-menu li:hover, .nav-menu li.active {
-  color: black;
+  color: #FFA500;
 }
 
 .nav-menu li::after {
@@ -58,15 +70,22 @@
   height: 3px;
   bottom: -3px;
   left: 0;
-  background-color: white;
+  background-color: #FFA500;
   transform-origin: bottom right;
   transition: transform 0.9s ease-out;
+
 }
 
 .nav-menu li:hover::after, .nav-menu li.active::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.nav-menu .active {
+  color: #FFA500;
+  font-weight: bold;
+}
+
 
 .touch {
   cursor: pointer;
@@ -145,4 +164,23 @@
     gap: 15px;
     font-size: 16px;
   }
+}
+
+.social-icons a{
+  color: black;
+  position: relative;
+  right: 40px;
+}
+.social-icon {
+  font-size: 30px;
+  margin: 10px 10px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+
+}
+.social-icons a:hover {
+  color: #FFA500;
 }

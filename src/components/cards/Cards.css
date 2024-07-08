@@ -20,14 +20,16 @@
   justify-content: center;
   align-items: center;
 
+
 }
 
 
 .card1, .card3 {
-  padding-top: 0%;
-  background-color: #f71c52; /* Main card color */
+  /* background-color: #f71c52;  */
+  background-color:#ffa500;
+  /* background-color: rgba(138, 97, 44, 0.818); */
   color: white;
-
+  text-align: center;
   padding: 20px;
   padding-bottom: 10px;
   height: 302px;
@@ -36,7 +38,11 @@
   margin-top: 10px;
 }
 .card2 {
-  background-color: #b40d4a; /* Main card color */
+  /* background-color: #b40d4a;  */
+  background-color:#e39c17;
+  /* background-color: rgba(126, 75, 8, 0.818); */
+  text-align: center;
+
   color: #fff; /* Text color */
   padding: 20px;
   padding-bottom: 30px;
@@ -50,21 +56,23 @@
   color: white;
 }
 
-h3 {
+.card-container h3 {
   color: white;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
+  /* font-weight: 100; */
+  font-weight: 400;
   font-style: normal;
   line-height: 30px;
   font-size: 29px;
   text-wrap: nowrap;
+  padding-bottom: 30px;
 }
 .card-container p {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 17px;
   padding-top: 22px;
   line-height: 21px;
   padding-bottom: 46px;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './ImageSlider.css';
 import img1 from "../assets/sliderbackground.jpeg"
-import img2 from "../assets/imagesliderbackground2.jpeg"
+import img2 from "../assets/sliderbackground.jpeg"
 
 
 const ImageSlider = () => {

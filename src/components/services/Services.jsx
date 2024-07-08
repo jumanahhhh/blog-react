@@ -29,7 +29,7 @@ const Services = () => {
   }, [observe]);
 
   return (
-    <div className="services">
+    <div className="services fixed-width-container">
       <div className="services-header">
         <h1>Services</h1>
         <p>All my services are categorized into these 2 subsets - select from the below to explore further</p>
@@ -48,7 +48,7 @@ const Services = () => {
             </a></button>
           </div>
         </div>
-        <div className="service-card" ref={(el) => elementsRef.current[1] = el}>
+        <div className="service-card2" ref={(el) => elementsRef.current[1] = el}>
           <div className="card-content">
             <h2>One on One Life Coaching</h2>
             <p>

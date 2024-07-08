@@ -15,7 +15,8 @@ body {
   }
   
   .footer h2 {
-    color: #ff3366;
+    /* color: #ff3366; */
+    color: #ffa500;
     font-size: 60px;
     padding-bottom: 20px;
   }
@@ -35,7 +36,7 @@ body {
   
 
   .footer a:hover {
-    color: #ff3366;
+    color: #ffa500;
   }
   
   .footer .social-icons {
@@ -102,6 +103,8 @@ body {
     padding: 20px;
 }
 .social-icon {
+    position: relative;
+    left: 0px;
     font-size: 30px; /* Change this value to increase or decrease the size */
     margin: 0 10px;
     transition: transform 0.3s;

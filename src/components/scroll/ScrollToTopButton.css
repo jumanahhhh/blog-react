@@ -1,0 +1,30 @@
+/* ScrollToTopButton.css */
+
+.scroll-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f87e04;
+    color: #fff;
+    /* text-align: center; */
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 0.4s;
+}
+.scroll-to-top-button:hover{
+    background-color: #442200;
+}
+.scroll-to-top-button.show {
+    display: block;
+    opacity: 0.7;
+}
+
+.scroll-to-top-button.hide {
+    display: none;
+}

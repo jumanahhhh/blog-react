@@ -1,62 +1,31 @@
-
-.App {
-  text-align: center;
-  background-color: white;
-}
-
-.motiv {
-  color: black;
-  font-family: 'Georgia', serif;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 80px;
-  margin-top: 80px;
-
-}
-
-.motiv p {
-  margin: 40px;
-  line-height: 1.6;
-  
-}
-
-.motiv hr {
-  width: 70%;
-  border: none;
-  border-top: 1px solid black;
+.fixed-width-container {
+  width: 1280px; 
   margin: 0 auto; 
+  padding: 0 15px;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .fixed-width-container {
+    width: 100%; /* Full width for mobile */
+    padding: 0 10px; /* Add some padding for mobile */
+  }
+
+  body {
+    overflow-x: auto; /* Allow horizontal scroll if needed */
+  }
 }
 
 
 
-
-
-@media (max-width: 768px) {
-  .motiv {
-    font-size: 30px;
-    margin-bottom: 50px;
-  }
-  
-  .motiv p {
-    margin: 20px;
-  }
-
-  .motiv hr {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  .motiv {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
-  
-  .motiv p {
-    margin: 10px;
-  }
-
-  .motiv hr {
-    width: 90%;
-  }
-}
