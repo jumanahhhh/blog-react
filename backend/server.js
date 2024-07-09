@@ -113,21 +113,29 @@
 //   console.log(`Server is running on port ${PORT}`);
 // });
 
+
+
+
+
+
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://blog-react-frontend.onrender.com' // Allow requests from your frontend URL
+  origin: process.env.FRONTEND_URL // Allow requests from your frontend URL
 }));
 app.use(express.json());
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://jumanahmaheen28:ikigai%40tamatar@cluster0.pd5zu1k.mongodb.net/blogdatabase?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   ssl: true, // Ensure SSL is enabled
