@@ -1,7 +1,5 @@
 import React from "react";
 import "./Hero.css";
-// import hero_img from '../assets/hero_img.png'
-import hero_img from '../assets/imagesliderbackground2.jpeg'
 
 const Hero = () => {
   return (
@@ -14,7 +12,7 @@ const Hero = () => {
           I am on a mission to redesign peoples lives with love in my heart,
           care in my voice, and compassion in my energy.
         </p>
-        <a href="https://wa.me/9663369013" target="_blank" className="hero-btn">
+        <a href="https://wa.me/9663369013" target="_blank" rel="noopener noreferrer" className="hero-btn">
             <div>Book a Consultation</div>
         </a>
         

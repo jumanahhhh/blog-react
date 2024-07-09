@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faGooglePlusG, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   useEffect(() => {
     setTimeout(() => {
       document.querySelector('.contact-info').classList.add('active');
-      // document.querySelector('.about-info').classList.add('active');
-
-      // document.querySelector('.courses-info').classList.add('active');
     }, 100);
   }, []);
 
@@ -23,7 +20,6 @@ const Footer = () => {
           <div className="contact-info">
             <li><FontAwesomeIcon icon={faPhone} /> +91 96633 69013   </li>
             <li><FontAwesomeIcon icon={faEnvelope} /> mail2tanu@gmail.com </li>
-            {/* <li><FontAwesomeIcon icon={faMapMarkerAlt} /> 7 Kings Rd, Portsmouth, Southsea, PO5 4DJ, UK</li> */}
           </div>
         </div>
         {/* <div className="aboutt">
@@ -54,7 +50,7 @@ const Footer = () => {
       <div className="social-icons">
   <a href="https://www.facebook.com/ElevateImage"><FontAwesomeIcon icon={faFacebookF} className="social-icon" /></a>
   <a href="https://www.instagram.com/tanuja.devang?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FontAwesomeIcon icon={faInstagram} className="social-icon" /></a>
-  <a href="#"><FontAwesomeIcon icon={faLinkedinIn} className="social-icon" /></a>
+  <a href="https://www.linkedin.com/in/tanuja-devang-53977a17/"><FontAwesomeIcon icon={faLinkedinIn} className="social-icon" /></a>
   <a href="https://wa.me/9513064127"><FontAwesomeIcon icon={faWhatsapp} className="social-icon" /></a>
 </div>
 

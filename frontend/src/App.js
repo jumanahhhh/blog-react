@@ -7,7 +7,6 @@ import About from './components/about/About';
 import Services from './components/services/Services';
 import Footer from './components/footer/Footer';
 import GridLayout from './components/gridlayout/GridLayout';
-// import ImageSlider from './components/imageslider/ImageSlider';
 import Cards from './components/cards/Cards';
 import Blog from './components/blog/Blog';
 import ScrollToTopButton from './components/scroll/ScrollToTopButton';

@@ -66,8 +66,6 @@
 
 
 // NEW FOR VERCEL
-
-// PopupForm.js
 import React, { useState } from 'react';
 import './PopupForm.css';
 
@@ -78,7 +76,8 @@ const PopupForm = ({ onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/users', {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/users`, {
+        
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -94,8 +93,6 @@ const PopupForm = ({ onClose }) => {
       console.error('Error:', error);
     }
   };
-    
-  
 
   return (
     <div className="popup-overlay">
@@ -128,7 +125,3 @@ const PopupForm = ({ onClose }) => {
 };
 
 export default PopupForm;
-
-
-
-

@@ -43,9 +43,9 @@ const Services = () => {
               clarity in your thoughts, courage in your decisions and bring consistency
               in your life.
             </p>
-            <button><a href="#" className="learn-more">
+            {/* <button><a href="/" className="learn-more">
               LEARN MORE →
-            </a></button>
+            </a></button> */}
           </div>
         </div>
         <div className="service-card2" ref={(el) => elementsRef.current[1] = el}>
@@ -56,9 +56,9 @@ const Services = () => {
               clarity in your thoughts, courage in your decisions and bring consistency
               in your life.
             </p>
-            <button><a href="#" className="learn-more">
+            {/* <button><a href="/" className="learn-more">
               LEARN MORE →
-            </a></button>
+            </a></button> */}
           </div>
         </div>
         
