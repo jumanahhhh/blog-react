@@ -39,8 +39,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/blog-react/admin" element={<Admin />} />
-        <Route path="/blog-react" element={
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/" element={
           <div className="App">
             {showPopup && <PopupForm onClose={handleClose} />}
             <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} servicesRef={servicesRef} blogRef={blogRef} resourceRef={resourceRef} />
