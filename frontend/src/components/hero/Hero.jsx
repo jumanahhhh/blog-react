@@ -1,24 +1,57 @@
+// import React from "react";
+// import "./Hero.css";
+// import hero_img from "../assets/hero-img.png";
+
+// const Hero = () => {
+//   return (
+//     <div className="hero fixed-width-container">
+//       <div className="hero-left">
+//         <span className="text1"><h2>ELEVATE WITH <br/>TANUJA</h2></span>
+//         <span className="text2"><h3>Life Coach & Image Consultant</h3></span>
+//         <br/>
+//         <p>
+//           I am on a mission to redesign peoples lives with love in my heart,
+//           care in my voice, and compassion in my energy.
+//         </p>
+//         <a href="https://wa.me/9663369013" target="_blank" rel="noopener noreferrer" className="hero-btn">
+//             <div>Book a Consultation</div>
+//         </a>
+        
+//       </div>
+//       <div className="hero-right">
+//         {/* <img src={hero_img}  alt="hero"></img> */}
+//       </div>
+//     </div>
+//   );
+// }; 
+
+// export default Hero;
+
 import React from "react";
 import "./Hero.css";
+import heroImg from "../assets/hero-img.jpeg"; // Ensure the correct path to the image
 
 const Hero = () => {
   return (
     <div className="hero fixed-width-container">
       <div className="hero-left">
-        <span className="text1"><h2>ELEVATE WITH <br/>TANUJA</h2></span>
-        <span className="text2"><h3>Life Coach & Image Consultant</h3></span>
-        <br/>
+        <span className="text1">
+          <h2>ELEVATE WITH <br />TANUJA</h2>
+        </span>
+        <span className="text2">
+          <h3>Life Coach & Image Consultant</h3>
+        </span>
+        <br />
         <p>
           I am on a mission to redesign peoples lives with love in my heart,
           care in my voice, and compassion in my energy.
         </p>
         <a href="https://wa.me/9663369013" target="_blank" rel="noopener noreferrer" className="hero-btn">
-            <div>Book a Consultation</div>
+          <div>Book a Consultation</div>
         </a>
-        
       </div>
       <div className="hero-right">
-        {/* <img src={hero_img}  alt="hero"></img> */}
+        <img src={heroImg} alt="Hero" />
       </div>
     </div>
   );

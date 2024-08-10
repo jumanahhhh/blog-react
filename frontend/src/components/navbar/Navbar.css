@@ -1,34 +1,34 @@
 .navbar {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 40px;
   box-shadow: 0 1px 3px -2px black;
   color: #000;
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 10px;
-  padding-bottom: 10px;
 }
 
-
 .nav-logo {
-  position: relative;
-  left: 150px;
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-left: 20px;
 }
 
 .nav-logo img {
+  position: relative;
+  left: 100px;
   width: 150px;
   height: auto;
-  margin: 0;
 }
 
-.nav-logo p {
-  font-size: 38px;
-  font-weight: 500;
+.nav-menu-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  position: relative;
 }
 
 .nav-menu {
@@ -39,12 +39,9 @@
   gap: 50px;
   font-size: 20px;
   font-weight: 500;
-}
-
-.nav-menu-container {
-  display: flex;
-  flex: 1;
-  justify-content: center;
+  margin-right: 150px;
+  margin-left: 100px;
+  
 }
 
 .nav-menu li {
@@ -58,8 +55,9 @@
   transition: all 0.3s ease;
 }
 
-.nav-menu li:hover, .nav-menu li.active {
-  color: #FFA500;
+.nav-menu li:hover,
+.nav-menu li.active {
+  color: #ffa500;
 }
 
 .nav-menu li::after {
@@ -70,79 +68,96 @@
   height: 3px;
   bottom: -3px;
   left: 0;
-  background-color: #FFA500;
+  background-color: #ffa500;
   transform-origin: bottom right;
   transition: transform 0.9s ease-out;
-
 }
 
-.nav-menu li:hover::after, .nav-menu li.active::after {
+.nav-menu li:hover::after,
+.nav-menu li.active::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
 .nav-menu .active {
-  color: #FFA500;
+  color: #ffa500;
   font-weight: bold;
 }
 
-
-.touch {
-  cursor: pointer;
+.nav-menu-container .social-icons {
   display: flex;
   align-items: center;
-  gap: 45px;
-  list-style: none;
-  font-size: 20px;
-  font-weight: 500;
+
 }
 
+.nav-menu-container .social-icons a {
+  color: black;
+  font-size: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
 
+.nav-menu-container .social-icons a:hover {
+  color: #ffa500;
+  transform: scale(1.2);
+}
+
+.nav-btn {
+  display: none;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: var(--textColor);
+  font-size: 1.8rem;
+}
 
 @media (max-width: 1024px) {
-  .nav-logo p {
-    font-size: 28px;
-  }
-
-  .nav-menu {
-    gap: 30px;
-    font-size: 18px;
-  }
-
-  .touch {
-    gap: 30px;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 10px;
-  }
 
   .nav-logo img {
+    position: relative;
     width: 120px;
+    left: -20px;
   }
 
-  .nav-logo p {
-    font-size: 24px;
+  .nav-btn {
+    display: block;
+  }
+
+  .nav-menu-container {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    background-color: #ffd88f;
+    transition: 0.4s ease-in-out;
+    z-index: 10;
   }
 
   .nav-menu {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
-    width: 100%;
-    margin-top: 10px;
+    padding-left: 0; /* Center menu items */
+    margin-left: 150px;
+    margin-bottom: 50px;
   }
 
-  .touch {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    width: 100%;
-    margin-top: 10px;
+  .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 2rem;
   }
 }
 
@@ -151,36 +166,12 @@
     width: 100px;
   }
 
-  .nav-logo p {
-    font-size: 20px;
-  }
-
   .nav-menu {
     gap: 15px;
     font-size: 16px;
   }
 
-  .touch {
-    gap: 15px;
-    font-size: 16px;
+  .nav-menu-container .social-icons a {
+    font-size: 25px;
   }
-}
-
-.social-icons a{
-  color: black;
-  position: relative;
-  right: 40px;
-}
-.social-icon {
-  font-size: 30px;
-  margin: 10px 10px;
-  transition: transform 0.3s;
-}
-
-.social-icon:hover {
-  transform: scale(1.2);
-
-}
-.social-icons a:hover {
-  color: #FFA500;
 }

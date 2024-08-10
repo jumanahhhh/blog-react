@@ -1,4 +1,10 @@
 /* Transition */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
 
 .card1, .card2, .card3 {
   opacity: 0;
@@ -11,47 +17,50 @@
   transform: translateY(0);
 }
 
-
 .card-container {
   font-family: Arial, sans-serif;
-  /* background-color: #f4f4f4; */
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  padding: 3vh 0;
+  /* gap: 2vw;  */
 }
 
-
 .card1, .card3 {
-  /* background-color: #f71c52;  */
-  background-color:#ffa500;
-  /* background-color: rgba(138, 97, 44, 0.818); */
   color: white;
   text-align: center;
   padding: 20px;
   padding-bottom: 10px;
   height: 302px;
   width: 345px;
-
-  margin-top: 10px;
+  /* padding: 2vw;
+  padding-bottom: 10px;
+  height: 302px;
+  width: 25vw; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.842), 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 2vh;
+  background: linear-gradient(301deg, rgba(231,116,35,1) 0%, rgba(255,184,51,1) 100%);
 }
-.card2 {
-  /* background-color: #b40d4a;  */
-  background-color:#e39c17;
-  /* background-color: rgba(126, 75, 8, 0.818); */
-  text-align: center;
 
-  color: #fff; /* Text color */
+.card2 {
+  background: linear-gradient(201deg, rgba(231,116,35,1) 0%, rgba(255,184,51,1) 100%);
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.842), 0 6px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
   padding: 20px;
   padding-bottom: 30px;
-  height: 302px;
+  height: 312px;
   width: 345px;
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* height: 47vh;
+  width: 25vw; */
+  position: relative;
+  z-index: 5;
+  border-radius: 10px;
 }
+
 .card2 p {
+  font-family: 'Nunito Sans', sans-serif;
   padding-bottom: 33px;
   color: white;
 }
@@ -59,46 +68,46 @@
 .card-container h3 {
   color: white;
   font-family: "Roboto", sans-serif;
-  /* font-weight: 100; */
-  font-weight: 400;
-  font-style: normal;
-  line-height: 30px;
-  font-size: 29px;
-  text-wrap: nowrap;
-  padding-bottom: 30px;
+  font-weight: 500;
+  padding-top: 15px;
+  /* font-size: 2vw; */
+  font-size: 26px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
 }
+
 .card-container p {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  font-size: 17px;
-  padding-top: 22px;
+  font-size: 1.2vw;
   line-height: 21px;
-  padding-bottom: 46px;
-}
-button {
-  background-color: transparent;
-  border: none;
-  text-decoration: none;
-  padding: 5px 10px;
-  background-color: white;
-  font-family: "Roboto", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  line-height: 10px;
-  font-size: 13px;
-  transition: all 0.9s ease;
-  cursor: pointer;
-  padding: 12px 25px 12px 25px;
+  padding: 0 1vw;
 }
 
-button a {
-  text-decoration: none;
-  color: inherit; /* This ensures the link text inherits the button text color */
-}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+  }
 
-button:hover {
-  background-color: #f2f2f2;
-  transform: translateY(-5px);
+  .card1, .card2, .card3 {
+    width: 90%;
+    height: auto; /* Let height adjust based on content */
+    margin: 1px 0; /* Add some margin between cards */
+  }
+
+  .card-container h3 {
+    font-size: 4vw; /* Adjust font size for mobile */
+    margin-bottom: 2vh;
+  }
+
+  .card-container p {
+    font-size: 3vw; /* Adjust font size for mobile */
+    padding: 0 5vw;
+    margin-bottom: 1vh;
+    line-height: 14px;
+  }
 }

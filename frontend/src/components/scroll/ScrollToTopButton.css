@@ -16,6 +16,7 @@
     cursor: pointer;
     outline: none;
     transition: opacity 0.4s;
+    z-index: 100;
 }
 .scroll-to-top-button:hover{
     background-color: #442200;

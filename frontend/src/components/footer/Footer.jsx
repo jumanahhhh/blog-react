@@ -22,30 +22,6 @@ const Footer = () => {
             <li><FontAwesomeIcon icon={faEnvelope} /> mail2tanu@gmail.com </li>
           </div>
         </div>
-        {/* <div className="aboutt">
-          <h3>More about Us</h3>
-          <div className="about-info">
-            <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Management team</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Location</a></li>
-              <li><a href="#">Pricing</a></li>
-            </ul>
-          </div>
-        </div> */}
-        {/* <div className="courses">
-          <h3>Latest courses</h3>
-          <div className="courses-info">
-            <ul>
-              <li><a href="#">What is life coaching</a></li>
-              <li><a href="#">Life coaching and your family</a></li>
-              <li><a href="#">Find your life purpose</a></li>
-              <li><a href="#">Tap into endless motivation</a></li>
-              <li><a href="#">Coaching focuses on your future</a></li>
-            </ul>
-          </div>
-        </div> */}
       </div>
       <div className="social-icons">
   <a href="https://www.facebook.com/ElevateImage"><FontAwesomeIcon icon={faFacebookF} className="social-icon" /></a>

@@ -1,10 +1,10 @@
-import React, { useRef, useEffect } from 'react';
-import './GridLayout.css';
-import useIntersectionObserver from '../../hooks/useIntersectionObserver';
-import image1 from '../assets/grid1.jpg';
-import image2 from '../assets/grid2.jpg';
-import image3 from '../assets/image3.png';
-import image4 from '../assets/image4.png';
+import React, { useRef, useEffect } from "react";
+import "./GridLayout.css";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
+import image1 from "../assets/grid.png";
+import image2 from "../assets/grid2.jpg";
+import image3 from "../assets/image3.png";
+import image4 from "../assets/image4.png";
 
 const GridLayout = () => {
   const elementsRef = useRef([]);
@@ -12,7 +12,7 @@ const GridLayout = () => {
   const handleIntersect = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animate');
+        entry.target.classList.add("animate");
       }
     });
   };
@@ -29,26 +29,41 @@ const GridLayout = () => {
 
   return (
     <div className="grid-layout fixed-width-container">
-      <div className="grid-item" ref={(el) => elementsRef.current[0] = el}>
+
+      <div className="grid-item" ref={(el) => (elementsRef.current[0] = el)}>
         <div className="text-container">
           <img src={image3} alt="icon" className="icon" />
-          <h3>Effortless success</h3><hr/>
-          <p>Practice ultimate self-care and increase your health and vitality. People who take exceptional care of themselves attract extraordinary opportunities and people into their lives. Learn the importance of being blessedly selfish.</p>
+          <h3>Effortless success</h3>
+          <hr />
+          <p>
+            Practice ultimate self-care and increase your health and vitality.
+            People who take exceptional care of themselves attract extraordinary
+            opportunities and people into their lives. Learn the importance of
+            being blessedly selfish.
+          </p>
           {/* <button className="read-more">READ MORE</button> */}
         </div>
       </div>
-      <div className="grid-item" ref={(el) => elementsRef.current[1] = el}>
+
+      <div className="grid-item" ref={(el) => (elementsRef.current[1] = el)}>
         <img src={image1} alt="Person working" />
       </div>
-      <div className="grid-item" ref={(el) => elementsRef.current[2] = el}>
+
+      <div className="grid-item" ref={(el) => (elementsRef.current[2] = el)}>
         <img src={image2} alt="Person reading" />
-        
       </div>
-      <div className="grid-item" ref={(el) => elementsRef.current[3] = el}>
+      
+      <div className="grid-item" ref={(el) => (elementsRef.current[3] = el)}>
         <div className="text-container">
           <img src={image4} alt="icon" className="icon" />
-          <h3>Work smarter, not harder</h3><hr/>
-          <p>Align yourself with the energy that’s already out there. Attract success instead of chasing after it and stop struggling to reach your goals—you know, coming up with a plan, setting a timeline and taking specific action steps, etc.</p>
+          <h3>Work smarter, not harder</h3>
+          <hr />
+          <p>
+            Align yourself with the energy that’s already out there. Attract
+            success instead of chasing after it and stop struggling to reach
+            your goals—you know, coming up with a plan, setting a timeline and
+            taking specific action steps, etc.
+          </p>
           {/* <button className="read-more">READ MORE</button> */}
         </div>
       </div>
@@ -57,4 +72,3 @@ const GridLayout = () => {
 };
 
 export default GridLayout;
-

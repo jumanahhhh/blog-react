@@ -56,7 +56,7 @@ function App() {
             </div>
             <GridLayout />
             <div ref={blogRef}>
-              <Blog />
+              {/* <Blog /> */}
               <Testimonials/>
             </div>
             <div ref={resourceRef}>

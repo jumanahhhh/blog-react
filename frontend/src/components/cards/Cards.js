@@ -36,7 +36,7 @@ const Cards = () => {
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet"
       />
-      <div className="card-container">
+      <div className="card-container fixed-width-container">
         <div className="card1" ref={(el) => elementsRef.current[0] = el}>
           <h3>Consultancy &amp; advising</h3>
           <p>
