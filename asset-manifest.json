@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/blog-react/static/css/main.3a8a5db3.css",
-    "main.js": "/blog-react/static/js/main.1fa2b51d.js",
+    "main.css": "/blog-react/static/css/main.7b26ad25.css",
+    "main.js": "/blog-react/static/js/main.c39ad203.js",
     "static/js/453.ede2c593.chunk.js": "/blog-react/static/js/453.ede2c593.chunk.js",
     "static/media/oneone.jpg": "/blog-react/static/media/oneone.8129e07a5cd9849fa596.jpg",
     "static/media/grid2.jpg": "/blog-react/static/media/grid2.168f157f8c59f43562c4.jpg",
     "static/media/grid.png": "/blog-react/static/media/grid.37c3853088c5466609d3.png",
     "static/media/hero-img.jpeg": "/blog-react/static/media/hero-img.f136011a79c8f4820688.jpeg",
     "static/media/about.jpg": "/blog-react/static/media/about.acccee72d5d496ac8f93.jpg",
+    "static/media/personal.jpg": "/blog-react/static/media/personal.f9b46b981a6e9e1debaf.jpg",
     "static/media/onon.jpeg": "/blog-react/static/media/onon.22cd6a02e564de6ecdaf.jpeg",
+    "static/media/colors.jpg": "/blog-react/static/media/colors.8c43ac4ce5e69182f79f.jpg",
     "static/media/oneononeimage.jpeg": "/blog-react/static/media/oneononeimage.43bbea1da9076f49e374.jpeg",
+    "static/media/personalbranding.jpg": "/blog-react/static/media/personalbranding.c1271265713ca2245c3f.jpg",
     "static/media/Card_1.jpg": "/blog-react/static/media/Card_1.a9a90833f3f86072eada.jpg",
     "static/media/service2.png": "/blog-react/static/media/service2.253f6d84ac5a096d1d5e.png",
     "static/media/logo.png": "/blog-react/static/media/logo.889146a3c063016ead08.png",
+    "static/media/wardrobe.jpg": "/blog-react/static/media/wardrobe.507f28529c30e3d37429.jpg",
+    "static/media/fitandstyle.jpg": "/blog-react/static/media/fitandstyle.f4ffe10773aa36120588.jpg",
     "static/media/single-cert.jpg": "/blog-react/static/media/single-cert.dea5216b4c2c0cb1a7e5.jpg",
     "static/media/arrow.svg": "/blog-react/static/media/arrow.264804b1f9393c8d3afb692a92949914.svg",
     "index.html": "/blog-react/index.html",
-    "main.3a8a5db3.css.map": "/blog-react/static/css/main.3a8a5db3.css.map",
-    "main.1fa2b51d.js.map": "/blog-react/static/js/main.1fa2b51d.js.map",
+    "main.7b26ad25.css.map": "/blog-react/static/css/main.7b26ad25.css.map",
+    "main.c39ad203.js.map": "/blog-react/static/js/main.c39ad203.js.map",
     "453.ede2c593.chunk.js.map": "/blog-react/static/js/453.ede2c593.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a8a5db3.css",
-    "static/js/main.1fa2b51d.js"
+    "static/css/main.7b26ad25.css",
+    "static/js/main.c39ad203.js"
   ]
 }
