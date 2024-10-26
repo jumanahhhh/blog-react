@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/blog-react/static/css/main.af03aaa7.css",
-    "main.js": "/blog-react/static/js/main.dafe193b.js",
+    "main.css": "/blog-react/static/css/main.0ca827fd.css",
+    "main.js": "/blog-react/static/js/main.20a13de6.js",
     "static/js/453.ede2c593.chunk.js": "/blog-react/static/js/453.ede2c593.chunk.js",
     "static/media/oneone.jpg": "/blog-react/static/media/oneone.8129e07a5cd9849fa596.jpg",
     "static/media/grid2.jpg": "/blog-react/static/media/grid2.168f157f8c59f43562c4.jpg",
@@ -14,20 +14,21 @@
     "static/media/colors.jpg": "/blog-react/static/media/colors.8c43ac4ce5e69182f79f.jpg",
     "static/media/oneononeimage.jpeg": "/blog-react/static/media/oneononeimage.43bbea1da9076f49e374.jpeg",
     "static/media/personalbranding.jpg": "/blog-react/static/media/personalbranding.c1271265713ca2245c3f.jpg",
+    "static/media/pragatheclienttest.jpg": "/blog-react/static/media/pragatheclienttest.49065bb889a45bb481f6.jpg",
     "static/media/service2.png": "/blog-react/static/media/service2.253f6d84ac5a096d1d5e.png",
     "static/media/logo.png": "/blog-react/static/media/logo.889146a3c063016ead08.png",
+    "static/media/shipramentor.jpg": "/blog-react/static/media/shipramentor.1c80cf807d8fb132fa5b.jpg",
     "static/media/wardrobe.jpg": "/blog-react/static/media/wardrobe.507f28529c30e3d37429.jpg",
     "static/media/fitandstyle.jpg": "/blog-react/static/media/fitandstyle.f4ffe10773aa36120588.jpg",
-    "static/media/mentor.png": "/blog-react/static/media/mentor.a0ce5b397188e69c5d80.png",
     "static/media/single-cert.jpg": "/blog-react/static/media/single-cert.dea5216b4c2c0cb1a7e5.jpg",
     "static/media/client.png": "/blog-react/static/media/client.e07b089b7133867d6cc5.png",
     "index.html": "/blog-react/index.html",
-    "main.af03aaa7.css.map": "/blog-react/static/css/main.af03aaa7.css.map",
-    "main.dafe193b.js.map": "/blog-react/static/js/main.dafe193b.js.map",
+    "main.0ca827fd.css.map": "/blog-react/static/css/main.0ca827fd.css.map",
+    "main.20a13de6.js.map": "/blog-react/static/js/main.20a13de6.js.map",
     "453.ede2c593.chunk.js.map": "/blog-react/static/js/453.ede2c593.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af03aaa7.css",
-    "static/js/main.dafe193b.js"
+    "static/css/main.0ca827fd.css",
+    "static/js/main.20a13de6.js"
   ]
 }
