@@ -107,4 +107,29 @@ body {
 .footer .social-icon:hover {
     transform: scale(1.2);
   }
+
+.legal-links {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+.legal-links a {
+    color: #aaa;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+.legal-links a:hover {
+    color: #FF9800;
+  }
+
+.legal-links span {
+    color: #555;
+  }
   

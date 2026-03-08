@@ -119,9 +119,6 @@ const [menu, setMenu] = useState("home");
           <a href="https://www.linkedin.com/in/tanuja-devang-53977a17/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedinIn} className="social-icon" />
           </a>
-          <a href="https://wa.me/9663369013" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faWhatsapp} className="social-icon" />
-          </a>
         </div>
 
         {/* Close button in responsive menu */}

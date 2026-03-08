@@ -16,7 +16,7 @@ const Hero = () => {
         <p>
         My mission is to empower individuals to cultivate a positive self-image by embracing authenticity, courage, and clarity in their lives. I am dedicated to guiding them on a journey of self-discovery, enabling them to consistently align their actions with their true selves and achieve lasting fulfillment.
         </p>
-        <a href="https://wa.me/9663369013" target="_blank" rel="noopener noreferrer" className="hero-btn">
+        <a href="mailto:connect@tanujadevang.com" className="hero-btn">
           <div>Book a Consultation</div>
         </a>
       </div>

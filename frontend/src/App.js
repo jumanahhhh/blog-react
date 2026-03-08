@@ -16,6 +16,8 @@ import ImageConsulting from './components/imgconsul/ImageConsulting';
 import ScrollToTop from './components/ScrollToTop'; 
 import Quote from './components/quote/Quote';
 import MentorTestimonials from './components/mentor/MentorTestimonials';
+import PrivacyPolicy from './components/legal/PrivacyPolicy';
+import TermsAndConditions from './components/legal/TermsAndConditions';
 
 function App() {
   const aboutRef = useRef(null);
@@ -64,6 +66,8 @@ function App() {
         } />
         <Route path="/image-consulting" element={<ImageConsulting />} />
         <Route path="/life-coaching" element={<LifeCoaching />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
       </Routes>
     </Router>
   );
