@@ -5,7 +5,8 @@
   padding: 10px 40px;
   box-shadow: 0 1px 3px -2px black;
   color: #000;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: rgb(255, 245, 225);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 10px;
 }
@@ -15,6 +16,8 @@
   align-items: center;
   gap: 10px;
   padding-left: 20px;
+  cursor: pointer;
+
 }
 
 .nav-logo img {
@@ -22,6 +25,7 @@
   left: 100px;
   width: 150px;
   height: auto;
+  cursor: pointer;
 }
 
 .nav-menu-container {
@@ -57,7 +61,8 @@
 
 .nav-menu li:hover,
 .nav-menu li.active {
-  color: #ffa500;
+  /* color: #ffa500; */
+  color: #FF9800;
 }
 
 .nav-menu li::after {
@@ -144,7 +149,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding-left: 0; /* Center menu items */
+    padding-left: 0;
     margin-left: 150px;
     margin-bottom: 50px;
   }

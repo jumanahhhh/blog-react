@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import logoo from "../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,6 +12,7 @@ import {
 
 import { FaBars, FaTimes } from "react-icons/fa";
 
+
 const Navbar = ({
   scrollToSection,
   aboutRef,
@@ -18,29 +20,55 @@ const Navbar = ({
   blogRef,
   resourceRef,
 }) => {
-  const [menu, setMenu] = useState("");
+  // const [menu, setMenu] = useState("");
+const [menu, setMenu] = useState("home"); 
 
   const navRef = useRef();
+  const navigate = useNavigate();
+  const location = useLocation();
+  
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
   };
 
+
+  // Function to handle the section navigation
   const handleNavClick = (sectionRef, menuName) => {
     setMenu(menuName);
-    if (sectionRef) {
-      scrollToSection(sectionRef);
+    
+    if (location.pathname !== "/t") {
+      // If not on the home page, navigate to home, then scroll to section
+      navigate("/");
     } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top for Home
+      // If already on the home page, scroll to the section
+      if (sectionRef) {
+        scrollToSection(sectionRef);
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      showNavbar(); 
     }
-    showNavbar(); // Close the menu after navigating
   };
-  
+
+
+  useEffect(() => {
+    if (menu === "about") {
+      scrollToSection(aboutRef);
+    } else if (menu === "services") {
+      scrollToSection(servicesRef);
+    } else if (menu === "blog") {
+      scrollToSection(blogRef);
+    } else if (menu === "resources") {
+      scrollToSection(resourceRef);
+    }
+  }, [location.pathname, menu, aboutRef, servicesRef, blogRef, resourceRef, scrollToSection]);
 
   return (
     <div className="navbar">
       {/* Logo on the left */}
       <div className="nav-logo">
-        <a href="index.html">
+        {/* Navigate to Home when logo is clicked */}
+        <a href="/" onClick={() => handleNavClick(null, "home")}>
           <img src={logoo} alt="logo" />
         </a>
       </div>
@@ -49,8 +77,8 @@ const Navbar = ({
       <div ref={navRef} className="nav-menu-container">
         <ul className="nav-menu">
           <li
-            onClick={() => handleNavClick(null, "index.html")}
-            className="nav-item active"
+            onClick={() => handleNavClick(null, "home")}
+            className={`nav-item ${menu === "home" ? "active" : ""}`}
           >
             Home
           </li>

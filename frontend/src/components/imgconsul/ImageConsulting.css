@@ -1,0 +1,189 @@
+.imgc .card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.imgc .card {
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  text-align: left;
+  padding: 20px;
+  max-width: 60%;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.imgc .card:nth-child(even) {
+  flex-direction: row-reverse;
+  text-align: right; 
+}
+
+.imgc .card-image {
+  width: 400px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.imgc .card:nth-child(even) .card-image {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+.imgc .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imgc .card-container h2 {
+  color: #FF9800;
+  font-family: "Augustine";
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.imgc .card-container p {
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 150;
+  font-style: normal;
+  line-height: 30px;
+
+}
+
+.imgc .card-container .time {
+  color: #9a8158;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+
+.consulting-section {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px; */
+  /* background-color: #f4d272;  */
+  border-radius: 5px;
+  margin: 50px;
+  /* gap: 50px; */
+}
+
+.consulting-content {
+  /* background-color: rebeccapurple; */
+  width: 40%;
+}
+
+.consulting-image img {
+  max-width: 100%;
+  width: 600px;
+  height: 400px;
+  height: auto;
+  border-radius: 0px;
+}
+
+.consulting-content h1 {
+  line-height: 1;
+  color: #FF9800;
+  font-family: "Augustine";
+  font-weight: 800;
+  font-size: 60px;
+  text-shadow: 0.5px 0.5px #040302;
+
+}
+
+.consulting-content p {
+  color: #000;
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  /* font-family: "Antique Serif"; */
+  font-weight: 150;
+  font-style: normal;
+  line-height: 30px;
+  max-width: 96%;
+}
+@media screen and (max-width: 768px) {
+  .imgc .card-container .card {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .imgc .card-container .card-image {
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 15px;
+  }
+
+  .imgc .card-container .card-content {
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgc .card-container {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+
+  .imgc .card {
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%; /* Adjust width for smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .imgc .card-image {
+    width: 100%; /* Make the image full-width */
+    height: auto; /* Adjust height */
+    margin: 0 0 15px 0; /* Adjust margin */
+  }
+
+  .imgc .card-content {
+    text-align: center;
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .imgc .card-container h2 {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .imgc .card-container p {
+    font-size: 16px; /* Adjust font size for readability */
+    line-height: 24px; /* Adjust line height */
+  }
+
+  .consulting-section {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    margin: 20px; /* Reduce margin */
+  }
+
+  .consulting-content, 
+  .consulting-image img {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .consulting-content h1 {
+    font-size: 32px; /* Reduce font size */
+    text-align: center; /* Center align text */
+  }
+
+  .consulting-content p {
+    font-size: 16px; /* Adjust font size */
+    line-height: 24px; /* Adjust line height */
+    max-width: 100%; /* Ensure full width */
+  }
+
+  .consulting-image img {
+    max-width: 100%; /* Make image full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

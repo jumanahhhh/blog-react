@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/navbar/Navbar';
@@ -7,13 +7,15 @@ import About from './components/about/About';
 import Services from './components/services/Services';
 import Footer from './components/footer/Footer';
 import GridLayout from './components/gridlayout/GridLayout';
-import Cards from './components/cards/Cards';
-import Blog from './components/blog/Blog';
 import ScrollToTopButton from './components/scroll/ScrollToTopButton';
-import PopupForm from './components/popup/PopupForm';
-import Admin from './components/Admin';
 import Cert from './components/cert/Cert';
 import Testimonials from './components/testimo/Testimonials';
+import WhoIsThisCoachingFor from './components/whoisthiscoachingfor/WhoIsThisCoachingFor';
+import LifeCoaching from './components/lifecoaching/LifeCoaching';
+import ImageConsulting from './components/imgconsul/ImageConsulting';
+import ScrollToTop from './components/ScrollToTop'; 
+import Quote from './components/quote/Quote';
+import MentorTestimonials from './components/mentor/MentorTestimonials';
 
 function App() {
   const aboutRef = useRef(null);
@@ -25,47 +27,43 @@ function App() {
     sectionRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // POPUP
-  const [showPopup, setShowPopup] = useState(false);
-
-  useEffect(() => {
-    setShowPopup(true);
-  }, []);
-
-  const handleClose = () => {
-    setShowPopup(false);
-  };
-
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
-        <Route path="/blog-react/admin" element={<Admin />} />
-        <Route path="/blog-react" element={
+        <Route path="/" element={
           <div className="App">
-            {showPopup && <PopupForm onClose={handleClose} />}
             <Navbar scrollToSection={scrollToSection} aboutRef={aboutRef} servicesRef={servicesRef} blogRef={blogRef} resourceRef={resourceRef} />
             <Hero />
-            <Cards />
+            <Quote text="Your greatest masterpiece is your own life—invest in it, and watch yourself flourish."></Quote>
             <div ref={aboutRef}>
               <About />
             </div>
+            <Quote text="Curate your style; It's the art of Self Expression"></Quote>
+
+            <Cert />
+            <Quote text="Don’t settle for autopilot—craft your dream life and live it boldly, on your own terms."></Quote>            
             <div ref={servicesRef}>
               <Services />
-            <Cert/>
-
+            </div>
+            {/* <WhoIsThisCoachingFor /> */}
+            <div ref={blogRef}>
+              <WhoIsThisCoachingFor/>
             </div>
             <GridLayout />
-            <div ref={blogRef}>
-              {/* <Blog /> */}
-              <Testimonials/>
-            </div>
+
+            <MentorTestimonials/>
+            <Testimonials />
+
             <div ref={resourceRef}>
               <Footer />
             </div>
+            
             <ScrollToTopButton />
           </div>
         } />
-        
+        <Route path="/image-consulting" element={<ImageConsulting />} />
+        <Route path="/life-coaching" element={<LifeCoaching />} />
       </Routes>
     </Router>
   );

@@ -19,7 +19,8 @@ const Footer = () => {
           <h3>Contact us anytime</h3>
           <div className="contact-info">
             <li><FontAwesomeIcon icon={faPhone} /> +91 96633 69013   </li>
-            <li><FontAwesomeIcon icon={faEnvelope} /> mail2tanu@gmail.com </li>
+            {/* <li><FontAwesomeIcon icon={faEnvelope} /> elevatewithtanuja@gmail.com </li> */}
+            <li><FontAwesomeIcon icon={faEnvelope} /> connect@tanujadevang.com </li>
           </div>
         </div>
       </div>

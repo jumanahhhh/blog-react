@@ -1,0 +1,405 @@
+.life-coaching-container, .image-consulting-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #1A1A44; 
+  color: #EABF60; 
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.image-section {
+  flex: 1;
+  text-align: right;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+ .expectations{
+    margin: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column ;
+    margin-left: 190px;
+
+ }
+ .expectations h2{
+    margin-bottom: 20px;
+    max-width: 55%;
+    text-shadow: 0.5px 0.5px #040302;
+    color: #FF9800;
+    font-family: "Augustine";
+    font-weight: 800;
+    font-size: 60px;
+
+ }
+ .expectations li{
+    font-size: 1.2rem;
+    gap: 10px;
+    max-width: 60%;
+    margin-bottom: 45px;
+
+    color: #000;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+    list-style: none;
+ }
+.expectations img{
+    height: 5px;
+    height: 5px;
+}
+ .are-you-someone{
+    margin: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column ;
+    /* padding-left: 200px; */
+    margin-left: 190px;
+
+ }
+ .are-you-someone h2{
+    color: #EABF60; 
+    font-size: 3rem;
+    margin-bottom: 20px;
+    max-width: 55%;
+    margin-bottom: 40px;
+    text-shadow: 0.5px 0.5px #040302;
+
+    color: #FF9800;
+    font-family: "Augustine";
+    font-weight: 800;
+    font-size: 60px;
+ }
+ .are-you-someone li{
+    font-size: 1.2rem;
+    gap: 10px;
+    max-width: 60%;
+    margin-bottom: 50px;
+    list-style: none;
+
+    color: #000;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    /* font-family: "Antique Serif"; */
+    font-weight: 300;
+    font-style: normal;
+    line-height: 30px;
+ }
+ .coaching-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #f4d272; 
+    padding: 40px;
+    margin: 50px;
+    border-radius: 15px;
+    color: #2c2545; 
+    background-image: url("/src/components/assets/orangebg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+  }
+  
+  .coaching-content {
+    max-width: 60%;
+  }
+  
+  .coaching-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+    font-family: "Augustine";
+    font-weight: 800;
+    font-size: 50px;
+  }
+  
+  .coaching-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .coaching-content ul li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .session-details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .session-details span {
+    margin-right: 15px;
+  }
+  
+  .whatsapp-btn {
+    display: inline-block;
+    background-color: #2c2545; 
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: auto;
+  }
+  
+  .coaching-image {
+    max-width: 30%;
+  }
+  
+  .coaching-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .coaching-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    /* background-color: #f4d272;  */
+    border-radius: 5px;
+    margin: 50px;
+    gap: 50px;
+  }
+  
+  .coaching-content {
+    width: 40%;
+  }
+  
+  .coaching-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+  
+  .coaching-content h1 {
+    font-size: 3rem;
+    line-height: 1;
+    color: #FF9800;
+    font-family: "Augustine";
+    font-weight: 800;
+    font-size: 70px;
+    text-shadow: 0.5px 0.5px #040302;
+
+  }
+  
+  .coaching-content p {
+    color: #000;
+    font-size: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    /* font-family: "Antique Serif"; */
+    font-weight: 150;
+    font-style: normal;
+    line-height: 30px;
+    max-width: 96%;
+  }
+  
+  /* Still Not Sure Section */
+  .still-not-sure-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #32335D;
+    margin: 0px 150px 50px 150px;
+    border-radius: 5px;
+    gap: 20px;
+
+    background-image: url("/src/components/assets/orangebg.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    /* width: 100%; 
+    height: 100%;  */
+    color: #2c2545;
+
+  }
+  
+  .still-not-sure-content h2 {
+    font-size: 2rem;
+    font-family: "Augustine";
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .still-not-sure-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #f4d272;
+    color: #000;
+    /* width: 80%; */
+  }
+  
+  .still-not-sure-image img {
+    /* max-width: 70%; */
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    right: 0;
+  }
+  
+  button {
+    background-color: #F4E293;
+    background-color: #2c2545;
+    
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #F4E293;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  /* @media (max-width: 768px) {
+    .coaching-section, .still-not-sure-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .coaching-content, .still-not-sure-content, 
+    .coaching-image, .still-not-sure-image {
+      width: 100%;
+    }
+  } */
+
+  .number {
+    display: inline-block;
+    font-size: 3rem; 
+    font-weight: bold;
+    color: #FF9800;  
+    font-family: 'Playfair Display', serif; 
+    /* margin-bottom: 10px; */
+  }
+
+
+  /* Base Styles Remain Unchanged */
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .coaching-section{
+    flex-direction: column;
+    padding: 10px;
+    margin: 0px;
+  }
+  .coaching-container,
+  .still-not-sure-section {
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .coaching-content,
+  .still-not-sure-content {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .coaching-image,
+  .still-not-sure-image {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .coaching-image img,
+  .still-not-sure-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .coaching-content h1,
+  .coaching-content h2,
+  .still-not-sure-content h2 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+    font-size: 2rem; /* Reduced font size for smaller screens */
+  }
+
+  .coaching-content p,
+  .still-not-sure-content p,
+  .expectations li,
+  .are-you-someone li {
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 5px;
+  }
+
+  .session-details {
+    flex-direction: column;
+    font-size: 0.9rem;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .whatsapp-btn {
+    width: 90%;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .are-you-someone,
+  .expectations {
+    padding: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .are-you-someone h2,
+  .expectations h2 {
+    font-size: 1.8rem;
+    margin: 10px auto;
+    max-width: 90%;
+  }
+
+  .are-you-someone li,
+  .expectations li {
+    max-width: 90%;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .still-not-sure-section {
+    margin: 20px;
+    padding: 15px;
+    background-position: center;
+  }
+
+  .still-not-sure-content button {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}

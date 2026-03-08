@@ -7,7 +7,7 @@ body {
   .footer {
     background-color: #000;
     color: #fff;
-    padding: 50px 20px;
+    padding: 20px 20px;
     position: relative;
     text-align: center;
     display: flex;
@@ -15,15 +15,14 @@ body {
   }
   
   .footer h2 {
-    /* color: #ff3366; */
-    color: #ffa500;
-    font-size: 60px;
-    padding-bottom: 20px;
+    color: #FF9800;
+    font-size: 45px;
+    padding-bottom: 5px;
   }
   .footer h3 {
     color: #ffffff;
-    font-size: 20px;
-    padding-bottom: 10px;
+    font-size: 15px;
+    padding-bottom: 2px;
   }
   
   .footer a {
@@ -38,11 +37,6 @@ body {
   .footer a:hover {
     color: #ffa500;
   }
-  
-  .footer .social-icons {
-    margin-top: 20px;
-  }
-  
   .footer .social-icons a {
     margin: 0 10px;
     font-size: 20px;
@@ -105,7 +99,7 @@ body {
 .footer .social-icon {
     position: relative;
     left: 0px;
-    font-size: 30px; /* Change this value to increase or decrease the size */
+    font-size: 30px; 
     margin: 0 10px;
     transition: transform 0.3s;
   }

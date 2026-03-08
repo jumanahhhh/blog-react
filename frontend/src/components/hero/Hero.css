@@ -22,20 +22,25 @@
 }
 
 .hero-left h2 {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Playfair Display"; */
+  font-family: "Augustine";
   font-weight: 800;
   font-size: 70px;
-  color: #ffa500;
-  text-shadow: 2px 2px #040302;
+  /* color: #ffa500; */
+  color: #FF9800;
+  text-shadow: 1px 1px #040302;
   margin: 0;
   white-space: nowrap;
 }
 
 .hero-left h3 {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Augustine";
   font-weight: 300;
   font-size: 40px;
-  color: #000;
+  /* color: #000; */
+  color: rgb(82, 82, 82);
   margin: 0;
   white-space: nowrap;
 }
@@ -64,11 +69,12 @@
 
 .hero-left p {
   color: #000;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 100;
   font-style: normal;
   line-height: 30px;
+  max-width: 96%;
 }
 
 .hero-btn {
@@ -85,9 +91,11 @@
   color: white;
   position: relative;
   z-index: 2;
-  background-color: #ffa500;
+  /* background-color: #ffa500; */
+  background: linear-gradient(135deg, #FFB74D, #FF9800);
   /* background-color: #f89822; */
-  border: 2px solid black;
+  font-family: "Antique Serif";
+  border: 1px solid black;
   text-decoration: none;
   transition: transform 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
@@ -108,9 +116,9 @@
 
 .hero-right img {
   width: auto;
-  height: 500px; /* Adjust the height as needed */
+  height: 500px; 
   object-fit: cover;
-  border-radius: 20px; /* Ensure image has the same border radius as before */
+  border-radius: 20px;
 }
 
 @media (max-width: 768px) {
@@ -121,7 +129,9 @@
     padding: 0;
     margin: 0;
   }
-
+  .hero-left .text1 span{
+    margin-right: 80px;
+  }
   .hero-left {
     padding: 14px 19px;
     flex-direction: column;

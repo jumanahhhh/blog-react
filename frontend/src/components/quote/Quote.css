@@ -1,0 +1,27 @@
+.quote-container {
+  text-align: center;
+  margin: 90px 110px;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Times New Roman', serif;
+  color: #FF9800;
+  text-shadow: 0.5px 0.5px rgb(124, 123, 123);
+}
+
+.quote-text {
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .quote-container {
+    margin: 30px 20px; /* Reduce margin for smaller screens */
+    font-size: 24px; /* Adjust font size for readability on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quote-container {
+    margin: 20px 10px; /* Further reduce margin for very small screens */
+    font-size: 24px; /* Smaller font size for narrow devices */
+  }
+}

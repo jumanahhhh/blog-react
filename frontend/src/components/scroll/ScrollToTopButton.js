@@ -1,12 +1,8 @@
-// ScrollToTopButton.js
-
 import React, { useState, useEffect } from 'react';
-import './ScrollToTopButton.css'; // Import your CSS file for styling
+import './ScrollToTopButton.css'; 
 
 const ScrollToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
-
-    // Show button when user scrolls down 300px
     const toggleVisibility = () => {
         if (window.pageYOffset > 300) {
             setIsVisible(true);
@@ -15,7 +11,6 @@ const ScrollToTopButton = () => {
         }
     };
 
-    // Scroll to top when button is clicked
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -25,8 +20,6 @@ const ScrollToTopButton = () => {
 
     useEffect(() => {
         window.addEventListener('scroll', toggleVisibility);
-
-        // Clean up event listener
         return () => {
             window.removeEventListener('scroll', toggleVisibility);
         };

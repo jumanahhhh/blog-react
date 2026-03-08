@@ -2,7 +2,6 @@
   padding: 20px;
   margin: 10px auto;
   background-color: white;
-  /* background: linear-gradient(301deg, rgba(231,116,35,1) 0%, rgba(255,184,51,1) 100%); */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 90%;
@@ -11,12 +10,14 @@
 .services-header {
   text-align: center;
   margin: 5px 30px;
-  margin-bottom: 5px;
+  margin-bottom: 35px;
+  font-family: "Playfair Display";
+
 }
 
 .services-header h1 {
-  color: #ff8c00;
-  /* color: white; */
+  /* color: #ff8c00; */
+  color: #FF9800;
   font-size: 2.8rem;
   font-weight: 800;
   margin-bottom: 25px;
@@ -26,7 +27,6 @@
 .services-header p {
   font-size: 1.2rem;
   color: #333;
-  /* color: white; */
 }
 
 .services-content {
@@ -37,12 +37,9 @@
 }
 
 .service-card, .service-card2 {
-  margin-top: 50px;
-  /* margin-right: 50px; */
   flex: 1;
   min-width: 200px;
   max-width: 465px;
-  
   height: 400px;
   background-color: #60563d;
   border-radius: 10px;
@@ -52,6 +49,7 @@
   position: relative;
   overflow: hidden;
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  cursor: pointer;
 }
 
 .service-card::before, .service-card2::before {
@@ -68,7 +66,7 @@
 }
 
 .service-card::before {
-  background-image: url('../assets/service1.png');
+  background-image: url('../assets/oneone.jpg');
 }
 
 .service-card2::before {
@@ -87,13 +85,17 @@
 
 .service-card h2, .service-card2 h2 {
   margin-top: 20px;
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 150px;
+  padding: 20px;
+  font-family: "Playfair Display";
+
 }
 
 .service-card p, .service-card2 p {
-  margin-top: 70px;
-  font-size: 1rem;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   color: white;
 }
@@ -113,6 +115,49 @@
   color: #e39400;
 }
 
+.service-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: linear-gradient(135deg, #FFB74D, #FF9800);
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+  /* color: white; */
+}
+.modal-content h2,h3,h4{
+  font-family: "Playfair Display";
+
+
+}
+.modal-content{
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+}
+
+
 @media only screen and (max-width: 768px) {
   .services-content {
     flex-direction: column;
@@ -121,7 +166,6 @@
 
   .service-card, .service-card2 {
     width: 90%;
-    /* margin-bottom: 10px; */
   }
 
   .services-header h1 {
@@ -135,5 +179,11 @@
   .service-card p, .service-card2 p {
     font-size: 0.9rem;
     margin-top: 50px;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
   }
 }

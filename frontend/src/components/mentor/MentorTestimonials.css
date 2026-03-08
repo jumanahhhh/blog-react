@@ -1,0 +1,89 @@
+/* Mentor Testimonials Section */
+.mentor-testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: rgb(255, 245, 225);
+  color: white;
+  text-align: left;
+}
+
+/* Individual Testimonial Card */
+.mentor-testimonials .testimonial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 800px;
+  height: auto; /* Allow height to be dynamic */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Image Styling for Circle Shape */
+.mentor-testimonials .testimonial-image {
+  width: 80px; /* Slightly smaller for mobile */
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 15px;
+}
+
+/* Heading for Testimonials */
+.mentor-testimonials .testimonial-heading {
+  text-align: center;
+  color: #FF9800;
+  font-family: "Augustine";
+  font-weight: 800;
+  font-size: 28px; /* Smaller font for mobile */
+  margin-bottom: 20px;
+}
+
+/* Description Styling */
+.mentor-testimonials .testimonial-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center; /* Center text on smaller screens */
+}
+
+/* Name Styling */
+.mentor-testimonials .testimonial-name {
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;    
+  text-align: center;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .mentor-testimonials {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Reduce padding */
+  }
+
+  .mentor-testimonials .testimonial {
+    max-width: 90%; /* Make the card take up more width */
+    padding: 15px; /* Reduce padding */
+    margin: 10px; /* Reduce margin */
+  }
+
+  .mentor-testimonials .testimonial-description {
+    font-size: 14px; /* Slightly smaller text for better fit */
+  }
+
+  .mentor-testimonials .testimonial-heading {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .mentor-testimonials .testimonial-image {
+    width: 70px; /* Reduce image size */
+    height: 70px;
+  }
+}
