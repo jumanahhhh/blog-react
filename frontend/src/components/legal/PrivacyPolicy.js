@@ -20,6 +20,7 @@ const PrivacyPolicy = () => {
         <div className="legal-nav">
           <Link to="/privacy-policy" className="active">Privacy Policy</Link>
           <Link to="/terms-and-conditions">Terms & Conditions</Link>
+          <Link to="/cancellation-refund">Cancellation & Refund</Link>
         </div>
       </div>
 

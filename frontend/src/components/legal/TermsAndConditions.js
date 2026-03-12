@@ -20,6 +20,7 @@ const TermsAndConditions = () => {
         <div className="legal-nav">
           <Link to="/privacy-policy">Privacy Policy</Link>
           <Link to="/terms-and-conditions" className="active">Terms & Conditions</Link>
+          <Link to="/cancellation-refund">Cancellation & Refund</Link>
         </div>
       </div>
 
@@ -85,36 +86,6 @@ const TermsAndConditions = () => {
           <p>
             Sessions may be recorded for internal or future training purposes. By participating, you consent
             to possible inclusion unless you notify us in writing prior to the session.
-          </p>
-        </div>
-
-        <div className="legal-section legal-notice">
-          <h2>No Refund Policy</h2>
-          <p>
-            Due to the nature of digital and live training programs, all Masterclass registrations are non-refundable.
-          </p>
-        </div>
-
-        <div className="legal-section">
-          <h2>Transfer Policy</h2>
-          <p>If you are unable to attend:</p>
-          <ul>
-            <li>You may request to attend the next scheduled Masterclass (one-time transfer only)</li>
-          </ul>
-        </div>
-
-        <div className="legal-section">
-          <h2>Cancellation by Organizer</h2>
-          <p>If the Masterclass is cancelled or rescheduled by the organizer:</p>
-          <ul>
-            <li>Participants will receive either a full refund OR option to attend the next session</li>
-          </ul>
-        </div>
-
-        <div className="legal-section">
-          <h2>Late Attendance / No Show</h2>
-          <p>
-            Failure to attend without prior notice will be considered a forfeited seat. No refunds will be issued.
           </p>
         </div>
 

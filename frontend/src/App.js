@@ -18,6 +18,7 @@ import Quote from './components/quote/Quote';
 import MentorTestimonials from './components/mentor/MentorTestimonials';
 import PrivacyPolicy from './components/legal/PrivacyPolicy';
 import TermsAndConditions from './components/legal/TermsAndConditions';
+import CancellationRefund from './components/legal/CancellationRefund';
 
 function App() {
   const aboutRef = useRef(null);
@@ -68,6 +69,7 @@ function App() {
         <Route path="/life-coaching" element={<LifeCoaching />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/cancellation-refund" element={<CancellationRefund />} />
       </Routes>
     </Router>
   );
